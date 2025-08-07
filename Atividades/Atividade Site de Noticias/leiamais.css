@@ -53,47 +53,43 @@ nav ul li a {
 
 .destaque {
   margin-bottom: 40px;
-  position: relative;
+}
+
+.destaque h2 {
+  margin-top: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+}
+
+.destaque p {
+  margin-top: 15px;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.destaque h3 {
+  margin-top: 20px;
+  font-size: 24px;
+  color: #333;
+  font-weight: bold;
 }
 
 .destaque .btn-detalhes {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
+  position: relative;
   background-color: #007bff;
   color: white;
   padding: 10px 15px;
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
+  display: inline-block;
+  margin-top: 20px;
   transition: background-color 0.3s;
 }
 
 .destaque .btn-detalhes:hover {
   background-color: #0056b3;
-}
-
-.outras-noticias {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-}
-
-.noticia {
-  background-color: white;
-  padding: 15px;
-  border-radius: 5px;
-  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-}
-
-.noticia:hover {
-  transform: translateY(-5px);
-}
-
-.noticia img {
-  width: 100%;
-  border-radius: 5px;
 }
 
 footer {
@@ -102,4 +98,8 @@ footer {
   text-align: center;
   padding: 15px 0;
   margin-top: 40px;
+}
+
+footer p {
+  font-size: 14px;
 }
