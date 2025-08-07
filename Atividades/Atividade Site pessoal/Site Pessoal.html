@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Xavier - Piloto Profissional</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(IMG_1.jpg);
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        
+        .container {
+           max-width: 1200px;
+           margin: 0 auto;
+           padding: 0 20px;
+          text-align: right; /* Alinhando o texto à direita */
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        
+        .tagline {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #e10600;
+            color: white;
+            padding: 10px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        
+        .btn:hover {
+            background: #b90500;
+        }
+        
+        nav {
+            background-color: #333;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 20px;
+            display: block;
+            transition: background 0.3s;
+        }
+        
+        nav ul li a:hover {
+            background-color: #e10600;
+        }
+        
+        section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 2.5rem;
+            color: #e10600;
+        }
+        
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+        
+        .about-text {
+            flex: 1;
+        }
+        
+        .about-image {
+            flex: 1;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .about-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .career-stats {
+            background-color: #333;
+            color: white;
+            padding: 50px 0;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #e10600;
+            margin-bottom: 10px;
+        }
+        
+        .gallery-btn-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+        
+        .sponsors {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            align-items: center;
+        }
+        
+        .sponsor-logo {
+            max-width: 150px;
+            height: auto;
+            filter: grayscale(100%);
+            transition: filter 0.3s;
+        }
+        
+        .sponsor-logo:hover {
+            filter: grayscale(0%);
+        }
+        
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+        }
+        
+        .social-links {
+            margin-bottom: 20px;
+        }
+        
+        .social-links a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+        
+        .social-links a:hover {
+            color: #e10600;
+        }
+        
+        @media (max-width: 768px) {
+            .about-content {
+                flex-direction: column;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Gabriel Xavier</h1>
+            <p class="tagline">Piloto Profissional de Automobilismo</p>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#career">Carreira</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="#sponsors">Patrocinadores</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </nav>
+    
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">Sobre o Piloto</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Gabriel Xavier é um piloto profissional nascido em de Limeira-SP. Começou sua carreira no kart aos 08 anos e se destacou no cenário automobilístico, vencendo diversos campeonatos ao redor do Brasil.</p>
+                    <br>
+                    <p>Com um estilo agressivo porém calculista, Gabriel é conhecido por suas ultrapassagens precisas e capacidade de manter a calma sob pressão. Sua dedicação ao esporte e busca constante pela excelência o tornaram um dos pilotos mais respeitados do circuito. No ano de 2023 fez a participação na série "Senna" da Netflix interpretando o piloto austriaco Niki Lauda.</p>
+                    <br>
+                    <p>Durante sua carreira se consagrou 3 vezes campeão regional, e desde então tem conquistado diversos títulos dento do automobilismo.</p>
+                </div>
+                <div class="about-image">
+                    <img src="IMG_2.JPG" alt="Gabriel Xavier">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="career-stats" id="career">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Estatísticas da Carreira</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">152</div>
+                    <div class="stat-label">Corridas Disputadas</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">37</div>
+                    <div class="stat-label">Vitórias</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">84</div>
+                    <div class="stat-label">Pódios</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">15</div>
+                    <div class="stat-label">Pole Positions</div>
+                </div>
+            </div>
+            <div class="gallery-btn-container">
+                <a href="galeria.html" class="btn">Ver Galeria de Fotos</a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="sponsors">
+        <div class="container">
+            <h2 class="section-title">Patrocinadores</h2>
+            <div class="sponsors">
+                <img src="rizatotintas.png" alt="Rizato Tintas" class="sponsor-logo">
+                <img src="comendadorpneus.png" alt="Comendador Pneus" class="sponsor-logo">
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Contato</h2>
+            <div style="max-width: 600px; margin: 0 auto;">
+                <form>
+                    <div style="margin-bottom: 20px;">
+                        <label for="name" style="display: block; margin-bottom: 5px;">Nome</label>
+                        <input type="text" id="name" name="name" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <label for="email" style="display: block; margin-bottom: 5px;">Email</label>
+                        <input type="email" id="email" name="email" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <label for="message" style="display: block; margin-bottom: 5px;">Mensagem</label>
+                        <textarea id="message" name="message" rows="5" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;"></textarea>
+                    </div>
+                    <button type="submit" class="btn" style="border: none; cursor: pointer;">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.instagram.com/_gabriel.xavier_01?utm_source=qr&igsh=dndyejhrdmQ2eGQ3" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p>&copy; 2025 Gabriel Xavier. Todos os direitos reservados.</p>
+            <p>Desenvolvido por <a href="#" style="color: #e10600; text-decoration: none;">Gabriel Xavier</a></p>
+        </div>
+    </footer>
+</body>
+</html>
