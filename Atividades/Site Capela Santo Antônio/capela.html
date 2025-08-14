@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link favicon rel="icon" href="Dapino-Religion-People-Church.16.png">
+    <title>Capela Santo Antonio - Comunidade Católica</title>
+    <link rel="stylesheet" href="capela.css">
+    <script>
+        function mostrarMensagem(event) {
+            event.preventDefault();
+            alert("Sua mensagem foi enviada com sucesso! Agradecemos o contato.");
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Capela Santo Antonio</h1>
+        <p>"Comunidade Católica"</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#horarios">Horários de Missa</a></li>
+            <li><a href="#eventos">Eventos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="inicio">
+            <div class="card">
+                <h2>Bem-vindo à Capela Santo Antonio</h2>
+                <p>Somos uma comunidade católica dedicada a seguir os ensinamentos de Cristo. Junte-se a nós em nossas celebrações e atividades pastorais.</p>
+            </div>
+        </section>
+
+        <section id="sobre">
+            <div class="card">
+                <h2>Sobre Nossa Capela</h2>
+                <p>A Capela Santo Antonio foi fundada em 1950 por fiéis devotos do santo. Desde então, temos servido a comunidade local com missas, sacramentos e obras de caridade.</p>
+                <p>Nossa missão é acolher a todos com amor cristão, seguindo o exemplo de Santo Antonio, conhecido por sua humildade, sabedoria e compaixão pelos necessitados.</p>
+            </div>
+        </section>
+
+        <section id="horarios">
+            <div class="card">
+                <h2>Horários de Missa</h2>
+                <div class="horarios-missa">
+                    <div>
+                        <h3>Domingo</h3>
+                        <p>7:30 - Missa matutina</p>
+                        <p>9:00 - Missa com coral</p>
+                        <p>18:00 - Missa vespertina</p>
+                    </div>
+                    <div>
+                        <h3>Segunda a Sexta</h3>
+                        <p>7:00 - Missa da manhã</p>
+                        <p>19:00 - Missa da noite</p>
+                    </div>
+                    <div>
+                        <h3>Sábado</h3>
+                        <p>8:00 - Missa matutina</p>
+                        <p>17:00 - Missa vespertina</p>
+                    </div>
+                    <div>
+                        <h3>Primeira Sexta</h3>
+                        <p>Adoração ao Santíssimo: 15:00-18:00</p>
+                        <p>Missa especial: 19:30</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="eventos">
+            <div class="card">
+                <h2>Próximos Eventos</h2>
+                <ul>
+                    <li><strong>13 de Junho</strong> - Festa de Santo Antonio (procissão e bênção dos pães)</li>
+                    <li><strong>Toda terça-feira</strong> - Novena de Santo Antonio (após a missa das 19h)</li>
+                    <li><strong>1º Sábado do mês</strong> - Encontro dos jovens</li>
+                    <li><strong>Domingos alternados</strong> - Café comunitário após a missa das 9h</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contato">
+            <div class="card">
+                <h2>Contato e Localização</h2>
+                <p><strong>Endereço:</strong> Rua P 4, 901 - Vila Paulista, Rio Claro - SP</p>
+                <p><strong>Telefone:</strong> (00) 1234-5678</p>
+                <p><strong>Email:</strong> contato@capelasantantonio.org.br</p>
+                
+                <h3>Entre em contato conosco</h3>
+                <form onsubmit="mostrarMensagem(event)">
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Enviar Mensagem</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Capela Santo Antonio - Todos os direitos reservados</p>
+        <p>Desenvolvido com amor pela comunidade</p>
+    </footer>
+</body>
+</html>
