@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Dapino-Religion-People-Church.16.png">
+    <title>Inscrição para Catequese - Capela Santo Antonio</title>
+    <link rel="stylesheet" href="capela.css">
+    <script>
+        function mostrarMensagem(event) {
+            event.preventDefault();
+            alert("Sua inscrição foi realizada com sucesso! Aguardamos você para a próxima catequese.");
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Capela Santo Antonio</h1>
+        <p>"Comunidade Católica"</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#horarios">Horários de Missa</a></li>
+            <li><a href="#eventos">Eventos</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="inscricao_catequese.html">Inscrição Catequese</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <div class="card">
+                <h2>Inscrição para Catequese</h2>
+                <p>Por favor, preencha o formulário abaixo para se inscrever na catequese de nossa comunidade.</p>
+                <form onsubmit="mostrarMensagem(event)">
+                    <div class="form-group">
+                        <label for="nome">Nome Completo:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="idade">Idade:</label>
+                        <input type="number" id="idade" name="idade" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone">Telefone:</label>
+                        <input type="text" id="telefone" name="telefone" required>
+                    </div>
+                    <button type="submit">Enviar Inscrição</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Capela Santo Antonio - Todos os direitos reservados</p>
+        <p>Desenvolvido com amor pela comunidade</p>
+    </footer>
+</body>
+</html>
