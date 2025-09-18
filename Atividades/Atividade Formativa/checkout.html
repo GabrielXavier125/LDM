@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vitrine 2025 - Finalizar Compra</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="Favicon.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">Vitrine 2025</div>
+  </header>
+
+  <main class="container" style="grid-template-columns: 1fr; padding: 150px 40px 40px;">
+    <section class="checkout-section">
+      <h1 style="margin-bottom: 24px; color: var(--accent-gold);">Resumo do Pedido</h1>
+      <ul id="checkout-list" style="list-style: none; padding: 0; margin-bottom: 24px;"></ul>
+      <p id="checkout-total" style="font-weight: 700; font-size: 1.2rem; color: var(--accent-gold);">Total: R$0,00</p>
+      <button id="confirm-btn" class="checkout-btn">Confirmar Compra</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Vitrine 2025. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    // Recupera itens do localStorage
+    const checkoutList = document.getElementById('checkout-list');
+    const checkoutTotal = document.getElementById('checkout-total');
+    const confirmBtn = document.getElementById('confirm-btn');
+
+    const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+    let total = 0;
+
+    cartItems.forEach(item => {
+      const li = document.createElement('li');
+      li.style.marginBottom = '8px';
+      li.textContent = `${item.name} - R$${item.price.toFixed(2).replace('.', ',')}`;
+      checkoutList.appendChild(li);
+      total += item.price;
+    });
+
+    checkoutTotal.textContent = `Total: R$${total.toFixed(2).replace('.', ',')}`;
+
+    confirmBtn.addEventListener('click', () => {
+      alert('Compra confirmada! Obrigado por comprar na Vitrine 2025.');
+      localStorage.removeItem('cartItems');
+      window.location.href = 'index.html';
+    });
+  </script>
+</body>
+</html>
